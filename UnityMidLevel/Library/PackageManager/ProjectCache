@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638101509972416751
-    m_Hash: 1010242877
+      ticks: 638101792180843625
+    m_Hash: 801195526
   m_LockFileStatus:
     m_FilePath: D:/Game Projects/Freelance/Unity/UnityMidLevelTestProject/UnityMidLevel/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638101510345924062
-    m_Hash: 1035663092
+      ticks: 638101792180904150
+    m_Hash: 1740022339
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -104,6 +104,7 @@ m_ResolvedPackages:
     - 2.0.0-preview.20
     - 2.0.0-preview.21
     - 2.0.0-preview.22
+    - 2.0.0
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
@@ -116,6 +117,7 @@ m_ResolvedPackages:
     - 2.0.0-preview.20
     - 2.0.0-preview.21
     - 2.0.0-preview.22
+    - 2.0.0
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
@@ -974,6 +976,170 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.0.0
+    nextVersion: 
+- packageId: com.unity.vectorgraphics@2.0.0-preview.20
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.0-preview.20
+  source: 1
+  resolvedPath: D:\Game Projects\Freelance\Unity\UnityMidLevelTestProject\UnityMidLevel\Library\PackageCache\com.unity.vectorgraphics@2.0.0-preview.20
+  assetPath: Packages/com.unity.vectorgraphics
+  name: com.unity.vectorgraphics
+  displayName: Vector Graphics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: The vector graphics package provides an SVG importer and runtime vector
+    graphics APIs.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.13
+    - 1.0.0-preview.15
+    - 1.0.0-preview.19
+    - 1.0.0-preview.20
+    - 1.0.0-preview.21
+    - 1.0.0-preview.22
+    - 1.0.0-preview.23
+    - 1.0.0-preview.24
+    - 1.0.0-preview.26
+    - 1.0.0-preview.27
+    - 1.0.0-preview.28
+    - 1.0.0-preview.29
+    - 1.0.0-preview.30
+    - 1.0.0-preview.31
+    - 1.0.0-preview.32
+    - 1.0.0-preview.33
+    - 1.0.0-preview.34
+    - 2.0.0-preview.2
+    - 2.0.0-preview.3
+    - 2.0.0-preview.4
+    - 2.0.0-preview.5
+    - 2.0.0-preview.6
+    - 2.0.0-preview.7
+    - 2.0.0-preview.8
+    - 2.0.0-preview.9
+    - 2.0.0-preview.10
+    - 2.0.0-preview.11
+    - 2.0.0-preview.12
+    - 2.0.0-preview.13
+    - 2.0.0-preview.14
+    - 2.0.0-preview.15
+    - 2.0.0-preview.16
+    - 2.0.0-preview.17
+    - 2.0.0-preview.18
+    - 2.0.0-preview.19
+    - 2.0.0-preview.20
+    compatible:
+    - 2.0.0-preview.2
+    - 2.0.0-preview.3
+    - 2.0.0-preview.4
+    - 2.0.0-preview.5
+    - 2.0.0-preview.6
+    - 2.0.0-preview.7
+    - 2.0.0-preview.8
+    - 2.0.0-preview.9
+    - 2.0.0-preview.10
+    - 2.0.0-preview.11
+    - 2.0.0-preview.12
+    - 2.0.0-preview.13
+    - 2.0.0-preview.14
+    - 2.0.0-preview.15
+    - 2.0.0-preview.16
+    - 2.0.0-preview.17
+    - 2.0.0-preview.18
+    - 2.0.0-preview.19
+    - 2.0.0-preview.20
+    verified: 
+  dependencies:
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.physics2d
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequesttexture
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestwww
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.imageconversion
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.physics2d
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.uielementsnative
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequest
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequesttexture
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestwww
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestassetbundle
+    version: 1.0.0
+  - name: com.unity.modules.assetbundle
+    version: 1.0.0
+  - name: com.unity.modules.unitywebrequestaudio
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  keywords:
+  - vector
+  - graphics
+  - svg
+  - importer
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637953102390000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.vectorgraphics.git
+    revision: 46f858dcbbb7fedd1ed5b99b16e7d7e31148946c
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
 - packageId: com.unity.visualscripting@1.7.8
   testable: 0
@@ -2835,6 +3001,58 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 
+    nextVersion: 
+- packageId: com.unity.2d.sprite@1.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.0.0
+  source: 2
+  resolvedPath: D:\Game Projects\Freelance\Unity\UnityMidLevelTestProject\UnityMidLevel\Library\PackageCache\com.unity.2d.sprite@1.0.0
+  assetPath: Packages/com.unity.2d.sprite
+  name: com.unity.2d.sprite
+  displayName: 2D Sprite
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: Use Unity Sprite Editor Window to create and edit Sprite asset properties
+    like pivot, borders and Physics shape
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    verified: 1.0.0
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - 2d
+  - sprite
+  - sprite editor window
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
     nextVersion: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0

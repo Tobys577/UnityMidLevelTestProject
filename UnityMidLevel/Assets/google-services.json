@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "278095536058",
+    "firebase_url": "https://unitymidlevel-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "unitymidlevel",
+    "storage_bucket": "unitymidlevel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278095536058:android:628af6e409bc341ee40783",
+        "android_client_info": {
+          "package_name": "com.TobyCSmith.UnityMidLevel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278095536058-ab78eo5dq2pl840a7e1g22od4mi982ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCArCLQc86VKsHRjz_r2S6aeKQh4UhoKUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278095536058-ab78eo5dq2pl840a7e1g22od4mi982ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
