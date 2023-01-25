@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Newtonsoft.Json.Linq;
+using UnityEngine.SceneManagement;
 
 namespace UnityMidLevel.Menu
 {
@@ -28,6 +29,10 @@ namespace UnityMidLevel.Menu
 
         [SerializeField]
         private TMP_InputField gravityInputField;
+
+        [Tooltip("The name of the loading scene file found in building settigns")]
+        [SerializeField]
+        private string loadingSceneName;
 
         void Start()
         {
@@ -108,6 +113,14 @@ namespace UnityMidLevel.Menu
             {
                 buttonView[i].SetActive(i == index);
             }
+        }
+
+        /// <summary>
+        /// Load the loading scene when the play button is pressed
+        /// </summary>
+        public void LoadLoadingScene()
+        {
+            SceneManager.LoadScene(loadingSceneName);
         }
     }
 }

@@ -394,8 +394,12 @@
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
+"Assets/Scripts/LoadingScene/ConnectToServer.cs"
 "Assets/Scripts/Menu/MenuController.cs"
+"Assets/Scripts/SampleScene/CrashRestarter.cs"
 "Assets/Scripts/SampleScene/RocketController.cs"
+"Assets/Scripts/SampleScene/SetGravitySingleton.cs"
+"Assets/Scripts/SampleScene/SpawnRockets.cs"
 -langversion:9.0
 
 /deterministic
