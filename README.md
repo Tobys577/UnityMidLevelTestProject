@@ -1,6 +1,7 @@
 # UnityMidLevelTestProject
 
-Time take: 4 hours, 47 minutes.
+Time taken: 4 hours, 47 minutes.
+
 Technologies used: Unity, Firebase, Photon (PUN)
 
 ### Build
