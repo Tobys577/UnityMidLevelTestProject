@@ -39,19 +39,21 @@ namespace UnityMidLevel.SampleScene
 
         // The photon view component attached to this object
         private PhotonView photonView;
-        private Rigidbody2D rb;
+        private Rigidbody rb;
 
-        private Vector2 startPosition;
+        private Vector3 startPosition;
+        private Quaternion startRotation;
 
         // Used for the player controlls
-        private Vector2 velocityReference;
+        private Vector3 velocityReference;
 
         void Start()
         {
             photonView = GetComponent<PhotonView>();
-            rb = GetComponent<Rigidbody2D>();
+            rb = GetComponent<Rigidbody>();
 
             startPosition = transform.position;
+            startRotation = transform.rotation;
         }
 
         /// <summary>
@@ -70,16 +72,16 @@ namespace UnityMidLevel.SampleScene
                 // Only enable the rigidbody movement once both rockets are loaded in
                 if (rb.isKinematic)
                 {
-                    rb.bodyType = (PhotonNetwork.CurrentRoom.PlayerCount == 2) ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic;
+                    rb.isKinematic = !(PhotonNetwork.CurrentRoom.PlayerCount == 2);
                     return;
                 }
 
                 // Apply movement based on WSAD / Arrow Keys using Input.GetAxis()
-                transform.Rotate(new Vector3(0, 0, -Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime));
+                transform.Rotate(new Vector3(0, 0, Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime));
                 throttle += Input.GetAxis("Vertical") * throttleIncrease;
                 throttle = Mathf.Clamp(throttle, 0, maxThrottle);
-                Vector2 targetVelocity = transform.up * throttle;
-                rb.velocity = Vector2.SmoothDamp(rb.velocity, targetVelocity, ref velocityReference, speedSmoothing);
+                Vector3 targetVelocity = transform.up * throttle;
+                rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocityReference, speedSmoothing);
 
                 // Change the alpha of the rocket's thruster based on the current throttle.
                 Color thrusterSpriteColour = thrusterSprite.color;
@@ -88,7 +90,7 @@ namespace UnityMidLevel.SampleScene
             }
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
+        private void OnCollisionEnter(Collision collision)
         {
             // Check you haven't somehow collided with yourself
             if (collision.gameObject != gameObject)
@@ -98,6 +100,7 @@ namespace UnityMidLevel.SampleScene
                 crashRestarter.rocketObject = gameObject;
                 crashRestarter.waitTime = respawnTime;
                 crashRestarter.startPosition = startPosition;
+                crashRestarter.startRotation = startRotation;
 
                 Debug.Log("Crashed!");
             }

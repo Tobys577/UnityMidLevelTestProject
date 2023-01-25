@@ -21,7 +21,7 @@ namespace UnityMidLevel.SampleScene
         /// </summary>
         private void Start()
         {
-            PhotonNetwork.Instantiate(rocketPrefab.name, rocketSpawnPositions[PhotonNetwork.CurrentRoom.PlayerCount - 1].position, Quaternion.identity)
+            PhotonNetwork.Instantiate(rocketPrefab.name, rocketSpawnPositions[PhotonNetwork.CurrentRoom.PlayerCount - 1].position, rocketPrefab.transform.rotation)
             .GetComponent<RocketController>();
         }
     }

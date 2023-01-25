@@ -19,6 +19,9 @@ namespace UnityMidLevel.SampleScene
         [HideInInspector]
         public Vector2 startPosition;
 
+        [HideInInspector]
+        public Quaternion startRotation;
+
         /// <summary>
         /// Deactivate the rocket object as it has crashed.
         /// </summary>
@@ -36,8 +39,8 @@ namespace UnityMidLevel.SampleScene
         {
             yield return new WaitForSeconds(waitTime);
             rocketObject.transform.position = startPosition;
-            rocketObject.transform.rotation = Quaternion.identity;
-            rocketObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            rocketObject.transform.rotation = startRotation;
+            rocketObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             rocketObject.GetPhotonView().RPC("SetVisible", RpcTarget.All, true);
             Destroy(gameObject);
         }

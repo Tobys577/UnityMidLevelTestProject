@@ -34,7 +34,7 @@ namespace UnityMidLevel.SampleScene
         [PunRPC]
         public void SetGravity(float gravityValue)
         {
-            Physics2D.gravity = new Vector2(0, -gravityValue);
+            Physics.gravity = new Vector3(0, -gravityValue);
             Debug.Log($"Gravity set: { gravityValue }");
         }
     }
