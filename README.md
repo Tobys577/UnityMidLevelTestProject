@@ -2,6 +2,8 @@
 
 Time taken: 5 hours, 21 minutes.
 
+Unity Version: 2021.3.16f
+
 Technologies used: Unity, Firebase, Photon (PUN)
 
 ### Build
